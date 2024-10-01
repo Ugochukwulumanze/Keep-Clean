@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<section>
+  <article>
+    <div class = "row">
+        <div class = 'column'>
+            <h1>About Us</h1>
+            <p>Keep clean is waste management and cleaning service company location in Asaba Delta State.<br>
+                 the company provides a regular and on demand waste pick up service for its registered customer and<br>
+                  as well provides seasoned cleaners for its customers. The company also provides on demand waste pick<br> 
+                  for paying but unregistered or unregular customers as well as on demand cleaning service for unregistered customers </p>
+
+        </div>
+        <div class = 'column'>
+           <img src = "{% static 'img/cleaning.jpeg' %}"> 
+        </div>
+    </div>
+  </article>  
+</section>
+{% endblock %}

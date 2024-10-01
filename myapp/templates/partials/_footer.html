@@ -1,0 +1,23 @@
+{% load static %}
+<footer>
+  <article>
+        <img src="{% static 'img/keep clean logo_footer.png' %}" />
+  </article>
+  <article class = "social">
+    <img src="{% static 'img/Facebook_Logo.jpg' %}" />
+    <img src="{% static 'img/Instangram_logo.jpg' %}" />
+    <img src="{% static 'img/Twitter_Logo.jpg' %}" />
+  </article>
+  <article>
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li><a href="{% url 'contact' %}">Contact</a></li>
+      <li><a href="{% url 'book' %}">Book</a></li>
+      <li><a href="{% url 'register' %}">Register</a></li>
+    </ul>
+  </article>
+  <article>
+    <p>Copyright Zeal Enterprice </p>
+  </article>
+</footer>

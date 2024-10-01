@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section>
+    <article id="hero">
+      <h1 class="heading_shadow">Get Your Place Cleaned</h1>
+      <p>
+        Book any of our services today 
+      </p>
+      <a href="{% url 'book' %}" class="cta"> Book now </a>
+    </article>
+  </section>
+  <section id = "hero2" >
+    <h2 >Our Services</h2>
+  </section>
+
+  <section>
+    <article>
+      <h2>Waste Disposal Service</h2>
+      <img src="{% static 'img/waste_disposal.jpeg' %}">
+      <p>
+        We provide a standard waste bin and we come to dispose the waste every weekend.
+      </p>
+      <p>
+        <a href="{% url 'register' %}">Register for our waste disposal service</a>
+      </p>
+    </article>
+    <article>
+      <h2>Regular cleaning Service</h2>
+      <img src="{% static 'img/cleaning-person.jpeg' %}">
+      <p>
+        We provide trained cleaners to organisation for a regular cleaning service.
+      </p>
+      <p>
+        <a href="{% url 'register' %}">Register for our cleaning service</a>
+      </p>
+    </article>
+    <article>
+      <h2>On Demand cleaning service</h2>
+      <img src="{% static 'img/one_time.jpeg' %}">
+      <p>
+        You can book a on demand cleaning service, where we just come to clean your place for that time.
+      </p>
+      <p>
+        <a href="{% url 'book' %}">Book you on demand  cleaning service</a>
+      </p>
+    </article>
+    <article>
+      <h2>On Demand waste disposal service</h2>
+      <img src="{% static 'img/one_time_waste.jpeg' %}">
+      <p>
+        We provide an on demand waste disposal service where we  just come to dispose your just that time.
+      </p>
+      <p>
+        <a href="{% url 'book' %}">Book your on demand waste disposal service</a>
+      </p>
+    </article>
+  </section>
+
+{% endblock %}
